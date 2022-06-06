@@ -5,7 +5,7 @@
 replicaCount: 2
 
 image:
-  repository: umaatturu/nginxx
+  repository:umaatturu/nginxx
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
@@ -37,7 +37,7 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIp
+  type: ClusterIP
   port: 80
 
 ingress:
